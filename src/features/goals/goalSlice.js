@@ -88,7 +88,7 @@ export const goalSlice = createSlice({
         state.message = action.payload
       })
       .addCase(getGoals.pending, (state) => {
-        state.isLoading = true
+        state.isLoading = false
       })
       .addCase(getGoals.fulfilled, (state, action) => {
         state.isLoading = false

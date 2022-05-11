@@ -1,8 +1,22 @@
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
-import { deleteGoal } from '../features/goals/goalSlice'
+import { deleteGoal,getGoals } from '../features/goals/goalSlice'
 
 function GoalItem({ goal }) {
   const dispatch = useDispatch()
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {  //assign interval to a variaable to clear it
+      dispatch(getGoals())
+      console.log('gila')
+    }, 10000)
+ 
+    return () => {
+        clearInterval(intervalId); //This is important
+    }
+ 
+ }, [dispatch])
+  
 
   return (
     <div className='goal'>
