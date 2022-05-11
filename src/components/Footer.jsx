@@ -7,7 +7,7 @@ function Header() {
   return (
     <footer className='footer'>
         <div className='container'>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.hvrange.com"> HvRange.com </a> 
+          &copy; {new Date().getFullYear()} Copyright: <a href="http://hvrange.xyz"> hvrange.xyz </a> 
           Developed by Khalid Walit
         </div>
     </footer>
