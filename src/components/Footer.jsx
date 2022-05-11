@@ -5,12 +5,12 @@ import {logout, reset} from '../features/auth/authSlice'
 
 function Header() {
   return (
-    <header className='header'>
-        <div className='container'>
+    <footer className='footer'>
+        <div>
           &copy; {new Date().getFullYear()} Copyright: <a href="https://www.hvrange.com"> HvRange.com </a> 
           Developed by Khalid Walit
         </div>
-    </header>
+    </footer>
   )
 }
 
